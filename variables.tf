@@ -2,7 +2,7 @@ variable "filename" {
   default="/Users/bahkhan/baharul.txt"
 }
 variable "content" {
-  default = "This is my first terraform code"
+  default = "My changed pet name is "
 }
 
 variable "prefix" {
