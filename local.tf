@@ -18,3 +18,8 @@ resource "local_file" "key_file" {
     filename="/Users/bahkhan/VAIPRATECH/terraform-practice/key.txt"
     content = "${tls_private_key.pvtkey.private_key_pem}"
 }
+
+output "pet-name" {
+  value = random_pet.my_pet.id
+  description = "Please find the Pet name"
+}
